@@ -13,7 +13,7 @@ for k, v in ipairs(prioritySpellList) do
 	buffs[v] = k
 end
 
-hooksecurefunc("CompactUnitFrame_UpdateBuffs", function(self)
+hooksecurefunc("CompactUnitFrame_UpdateAuras", function(self)
 	if self:IsForbidden() or not self:IsVisible() or not self.buffFrames then
 		return
 	end
